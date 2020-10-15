@@ -1,0 +1,10 @@
+.content {
+  display: flex;
+  overflow-x: hidden;
+}
+
+@media (max-width: 375px) {
+  .content {
+    padding-top: 55px;
+  }
+}

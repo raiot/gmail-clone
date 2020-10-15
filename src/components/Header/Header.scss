@@ -1,0 +1,51 @@
+nav {
+    width: 300px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+
+    .tools-section {
+        background-color: aliceblue;
+        display: flex;
+        width: 100vw;
+        padding-bottom: 30px;
+
+        .hamburger-icon {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 10px 0 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            &:hover {
+                background-color: #d6d4d4;
+            }
+            border-radius: 50px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    nav {
+        width: 50px;
+        height: 50px;
+        z-index: 99;
+        position: fixed;
+
+        .tools-section {
+            padding-bottom: 10px;
+            z-index: 99;
+            width: 475px;
+
+            .hamburger-icon {
+                display: none;
+            }
+            img {
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

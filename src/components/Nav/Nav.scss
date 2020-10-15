@@ -1,0 +1,92 @@
+.action-section {
+    height: 100vh;
+    background-color: aliceblue;
+    width: 320px;
+    .button-round {
+        margin: 0 10px 0 25px;
+        &:hover {
+            background-color: #f3f3f3;
+        }
+        display: flex;
+        align-items: center;
+        width: 150px;
+        border-radius: 25px;
+        border: 1px solid #d6d4d4;
+        cursor: pointer;
+
+        .nav-compose-icon {
+            background: url('../../assets/create_32dp.png') no-repeat center;
+            display: block;
+            width: 50px;
+            height: 50px;
+            content: '';
+        }
+
+        span {
+            background: none;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 20px 0 0 0;
+        padding: 0;
+
+        li {
+            &.highlight {
+                background-color: #f4f4f4c4;
+                font-weight: 500;
+            }
+            cursor: pointer;
+            padding: 10px 5px 10px 25px;
+
+            span {
+                margin: 0 5px 0 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .action-section {
+        position: fixed;
+        bottom: 0;
+        height: 60px;
+        width: 475px;
+        z-index: 99;
+
+        .button-round {
+            display: none;
+            margin-left: 5px;
+            max-width: 40px;
+            max-height: 40px;
+            border-radius: 20px;
+
+            span {
+                display: none;
+            }
+        }
+
+        ul {
+            margin: 0 0 0 0;
+            display: flex;
+            justify-content: space-evenly;
+            li {
+                &.highlight {
+                    background-color: #d6d4d4;
+                }
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                span {
+                    display: none;
+                }
+                img {
+                    color: black;
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
